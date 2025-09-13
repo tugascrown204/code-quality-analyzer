@@ -4,9 +4,13 @@ const { exec } = require('child_process');
 const chalk = require('chalk');
 
 const analyzeCodebase = (dir) => {
-  // Placeholder for analysis logic
-  console.log(chalk.blue(`Analyzing codebase at: ${dir}`));
-  // Implement code quality analysis logic here
+  try {
+    // Placeholder for analysis logic
+    console.log(chalk.blue(`Analyzing codebase at: ${dir}`));
+    // Implement code quality analysis logic here
+  } catch (error) {
+    console.error(chalk.red(`Error analyzing codebase: ${error.message}`));
+  }
 };
 
 const main = () => {
