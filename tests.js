@@ -1,6 +1,6 @@
 const { readFileAsync } = require('./utils');
 
-test('readFileAsync reads a file', async () => {
+test('should correctly read the contents of a file using readFileAsync', async () => {
   const data = await readFileAsync('sample.txt');
   expect(data).toBeDefined();
 });
