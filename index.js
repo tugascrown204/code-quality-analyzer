@@ -16,7 +16,7 @@ const analyzeCodebase = (dir) => {
 const main = () => {
   const args = process.argv.slice(2);
   if (args.length !== 1) {
-    console.error(chalk.red('Please provide the path to the codebase.'));
+    console.error(chalk.red('Please provide a single path to the codebase.')); // Updated message
     process.exit(1);
   }
   const codebasePath = path.resolve(args[0]);
