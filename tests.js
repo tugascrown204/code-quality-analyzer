@@ -4,4 +4,5 @@ test('should correctly read the contents of a file using readFileAsync', async (
   const data = await readFileAsync('sample.txt');
   expect(data).toBeDefined();
   expect(data).toMatch(/expected content/); // Add an expectation to verify content
+  expect(data).toContain('specific phrase'); // Additional content verification
 });
