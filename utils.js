@@ -1,6 +1,6 @@
-const fs = require('fs');
-const { promisify } = require('util');
+import fs from 'fs';
+import { promisify } from 'util';
 
 const readFileAsync = promisify(fs.readFile);
 
-module.exports = { readFileAsync };
+export { readFileAsync };
